@@ -5,6 +5,8 @@ export interface RepairItem {
   itemName: string;
   fault: string;
   estimatedCost?: number;
+  advanceReceived?: number;
+  estimateGiven?: number;
   promisedDate?: string; // ISO string format for dates
   status: 'Pending' | 'Repaired';
   callCount: number;

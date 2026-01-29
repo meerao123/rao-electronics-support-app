@@ -17,7 +17,9 @@ export default function RepairDashboard() {
     phoneNumber: '',
     itemName: '',
     fault: '',
-    promisedDate: ''
+    promisedDate: '',
+    advanceReceived: '',
+    estimateGiven: ''
   });
 
   // Load and Save Logic
@@ -54,12 +56,14 @@ export default function RepairDashboard() {
       itemName: formData.itemName,
       fault: formData.fault,
       promisedDate: formData.promisedDate || undefined,
+      advanceReceived: formData.advanceReceived ? parseFloat(formData.advanceReceived) : undefined,
+      estimateGiven: formData.estimateGiven ? parseFloat(formData.estimateGiven) : undefined,
       status: 'Pending',
       callCount: 0
     };
 
     setItems([...items, newItem]);
-    setFormData({ customerName: '', phoneNumber: '', itemName: '', fault: '', promisedDate: '' });
+    setFormData({ customerName: '', phoneNumber: '', itemName: '', fault: '', promisedDate: '', advanceReceived: '', estimateGiven: '' });
     setShowForm(false);
   };
 
@@ -70,6 +74,18 @@ export default function RepairDashboard() {
   const updateDate = (id: string, date: string) => {
     if (!date) return;
     setItems(items.map(item => item.id === id ? { ...item, promisedDate: date } : item));
+  };
+
+  const updateAdvance = (id: string) => {
+    const val = window.prompt("Enter Advance Received (₹):");
+    if (val === null) return;
+    setItems(items.map(item => item.id === id ? { ...item, advanceReceived: parseFloat(val) || 0 } : item));
+  };
+
+  const updateEstimate = (id: string) => {
+    const val = window.prompt("Enter Estimate Given (₹):");
+    if (val === null) return;
+    setItems(items.map(item => item.id === id ? { ...item, estimateGiven: parseFloat(val) || 0 } : item));
   };
 
   const deleteItem = (id: string) => {
@@ -181,6 +197,26 @@ export default function RepairDashboard() {
                 </div>
 
                 <div className="flex flex-col gap-3 text-black">
+                  <label className="text-sm font-black uppercase text-gray-500 tracking-widest ml-1">Advance Received (Optional)</label>
+                  <input 
+                    type="number" value={formData.advanceReceived}
+                    onChange={e => setFormData({...formData, advanceReceived: e.target.value})}
+                    placeholder="e.g. 500"
+                    className="bg-gray-50 border-2 border-gray-100 p-5 rounded-2xl outline-none focus:border-black text-xl font-bold transition-all"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3 text-black">
+                  <label className="text-sm font-black uppercase text-gray-500 tracking-widest ml-1">Estimate Given (Optional)</label>
+                  <input 
+                    type="number" value={formData.estimateGiven}
+                    onChange={e => setFormData({...formData, estimateGiven: e.target.value})}
+                    placeholder="e.g. 1500"
+                    className="bg-gray-50 border-2 border-gray-100 p-5 rounded-2xl outline-none focus:border-black text-xl font-bold transition-all"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3 text-black">
                   <label className="text-sm font-black uppercase text-gray-500 tracking-widest ml-1">Promised Delivery Date (Optional)</label>
                   <input 
                     type="date" value={formData.promisedDate}
@@ -249,6 +285,32 @@ export default function RepairDashboard() {
                         <div className="flex items-center gap-4 flex-wrap">
                             <span className="text-xs font-black text-gray-400 uppercase tracking-widest shrink-0">Contact:</span>
                             <span className="text-2xl font-black tracking-[0.1em] font-mono text-black">{item.phoneNumber}</span>
+                        </div>
+
+                        <div className="flex items-center gap-4 flex-wrap">
+                            <span className="text-xs font-black text-gray-400 uppercase tracking-widest shrink-0">Advance:</span>
+                            {item.advanceReceived !== undefined ? (
+                              <button onClick={() => updateAdvance(item.id)} className="text-2xl font-bold text-green-600">
+                                ₹{item.advanceReceived}
+                              </button>
+                            ) : (
+                              <button onClick={() => updateAdvance(item.id)} className="bg-gray-100 text-gray-500 text-xs font-black px-4 py-2 rounded-xl uppercase tracking-widest hover:bg-gray-200 border-2 border-dashed border-gray-300">
+                                Add Advance
+                              </button>
+                            )}
+                        </div>
+
+                        <div className="flex items-center gap-4 flex-wrap">
+                            <span className="text-xs font-black text-gray-400 uppercase tracking-widest shrink-0">Estimate:</span>
+                            {item.estimateGiven !== undefined ? (
+                              <button onClick={() => updateEstimate(item.id)} className="text-2xl font-bold text-blue-600">
+                                ₹{item.estimateGiven}
+                              </button>
+                            ) : (
+                              <button onClick={() => updateEstimate(item.id)} className="bg-gray-100 text-gray-500 text-xs font-black px-4 py-2 rounded-xl uppercase tracking-widest hover:bg-gray-200 border-2 border-dashed border-gray-300">
+                                Add Estimate
+                              </button>
+                            )}
                         </div>
 
                         <div className="flex items-center gap-4 flex-wrap">
