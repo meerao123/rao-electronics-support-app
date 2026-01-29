@@ -9,12 +9,12 @@ A professional, high-performance Progressive Web App (PWA) built with **Next.js 
 - **Dynamic Sorting:** Secondary sorting by promised delivery dates ensures deadlines are never missed.
 
 ### 📱 Professional Mobile UI
-- **Stark White Cards:** Every repair is isolated in a self-contained white box on a deep black background for maximum readability.
+- **Stark White Cards:** Every repair is isolated in a self-contained white box on a deep blue background for maximum readability.
 - **Zero-Overlap Layout:** A strictly vertical, mechanical design ensures no elements ever touch or cover each other.
 - **Finger-Friendly Controls:** Massive full-width buttons designed for fast, one-handed shop operations.
 
 ### 🔴 Visual Status Indicators
-- **Persistent Border Logic:** Every card features a thick 10px border—Blue for normal repairs and **Solid Red** for overdue items.
+- **Persistent Border Logic:** Every card features a thick 10px border—Blue for normal repairs.
 - **Pulsing Overdue Alerts:** Late items display a bold `⚠️ LATE / OVERDUE` warning to drive immediate action.
 
 <<<<<<< HEAD
