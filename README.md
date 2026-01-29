@@ -17,7 +17,6 @@ A professional, high-performance Progressive Web App (PWA) built with **Next.js 
 - **Persistent Border Logic:** Every card features a thick 10px border—Blue for normal repairs.
 - **Pulsing Overdue Alerts:** Late items display a bold `⚠️ LATE / OVERDUE` warning to drive immediate action.
 
-<<<<<<< HEAD
 ### 💬 Integrated Notifications
 - **WhatsApp Automation:** The "Complete Repair" button prompts for the final bill amount and generates a professionally formatted pickup message.
 - **Auto-Cleaning Phone Numbers:** Strips non-digit characters to ensure 100% compatibility with the WhatsApp API.
@@ -84,4 +83,3 @@ This project is licensed under the MIT License.
 *Built specifically for Rao Electronics workforce management.*
 =======
 
->>>>>>> db8b1b30049e1ee60fb3631a4ca1fab5ae3c2f5f
