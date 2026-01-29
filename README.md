@@ -12,6 +12,20 @@ A lightweight, fast Progressive Web App (PWA) built with **Next.js** to manage e
 - **Advance & Estimates:** Integrated fields to track "Advance Received" and "Estimate Given" for every repair.
 - **On-the-Fly Updates:** Add or modify financial details directly from the work cards without re-entering data.
 
+### 🖨️ Professional Receipt Printing
+- **One-Tap Receipt Generation:** Each work card includes a dedicated printer icon to instantly generate a customer receipt.
+- **Smart Print-Only Layout:** Uses CSS print media queries to ensure only the receipt content is printed, automatically hiding the dashboard UI.
+- **Auto-Filled Receipt Details:** Every receipt is dynamically populated with:
+  - **Business Header:** RAO ELECTRONICS branding, shop address, and primary contact number
+  - **Date & Time:** Automatically generated timestamp at print time
+  - **Receipt Identifier:** A short, unique receipt number for easy physical filing
+  - **Customer Details:** Customer name and phone number
+  - **Service Information:** Item/device type and reported issue
+  - **Financial Summary:** Advance received and estimated service cost (if provided)
+- **Printer-Friendly Design:** High-contrast black-on-white layout optimized for thermal receipt printers and standard A4/A5 printing.
+
+  ![Receipt Preview](screenshots/receipt-printer.jpeg)
+
 ### 📱 Professional Mobile UI
 - **Stark White Cards:** Every repair is isolated in a self-contained white box on a deep background for maximum readability.
 - **Zero-Overlap Layout:** A strictly vertical, mechanical design ensures no elements ever touch or cover each other.
@@ -39,10 +53,18 @@ This application is deployed on Vercel.
 
 ## 📸 App Preview
 
-<!-- You can replace these with your actual screenshots once uploaded to your repo -->
-| Mobile Dashboard | Overdue Alert | New Entry Form |
+| Work Queue | Priority Listing | Overdue Repairs |
 | :---: | :---: | :---: |
-| ![Dashboard Placeholder](https://via.placeholder.com/200x400?text=Dashboard) | ![Overdue Placeholder](https://via.placeholder.com/200x400?text=Overdue+Alert) | ![Form Placeholder](https://via.placeholder.com/200x400?text=New+Repair+Form) |
+| ![Work Queue](screenshots/work-queue.jpeg) | ![Priority Listing](screenshots/priority-listing.jpeg) | ![Overdue Repairs](screenshots/overdue-work-queue.jpeg) |
+
+| Register New Item | Financial Entry | WhatsApp Notification |
+| :---: | :---: | :---: |
+| ![Register Item](screenshots/register-item.jpeg) | ![Final Amount Entry](screenshots/final-amount-entry.jpeg) | ![WhatsApp Message](screenshots/automatic-whatsapp-message-generation.jpeg) |
+
+| Receipt Printing |
+| :---: |
+| ![Receipt Printer](screenshots/receipt-printer.jpeg) |
+
 
 ---
 
