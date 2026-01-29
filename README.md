@@ -1,35 +1,39 @@
 # 🛠️ Rao Electronics: Service Center Dashboard
 
-A lightweight, fast Progressive Web App (PWA) built with **Next.js** to manage electronic repair workflows. Optimized for mobile touch, it features a high-contrast "Clean Card" design and Automatically updated priority sorting.
+A lightweight, fast Progressive Web App (PWA) built with **Next.js** to manage electronic repair workflows. Optimized for mobile touch, it features a high-contrast "Clean Card" design and automatically updated priority sorting.
 
 ## ✨ Features
 
-### 🚀 Automated priority logic
+### 🚀 Automated Priority Logic
 - **Call-Based Bumping:** Repairs with the most customer follow-ups automatically jump to the top of the queue.
 - **Dynamic Sorting:** Secondary sorting by promised delivery dates ensures deadlines are never missed.
 
+### 💰 Financial Tracking
+- **Advance & Estimates:** Integrated fields to track "Advance Received" and "Estimate Given" for every repair.
+- **On-the-Fly Updates:** Add or modify financial details directly from the work cards without re-entering data.
+
 ### 📱 Professional Mobile UI
-- **Stark White Cards:** Every repair is isolated in a self-contained white box on a deep blue background for maximum readability.
+- **Stark White Cards:** Every repair is isolated in a self-contained white box on a deep background for maximum readability.
 - **Zero-Overlap Layout:** A strictly vertical, mechanical design ensures no elements ever touch or cover each other.
 - **Finger-Friendly Controls:** Massive full-width buttons designed for fast, one-handed shop operations.
 
 ### 🔴 Visual Status Indicators
-- **Persistent Border Logic:** Every card features a thick 10px border—Blue for normal repairs.
+- **Persistent Border Logic:** Every card features a thick 10px border—Blue for active repairs and Red for overdue items.
 - **Pulsing Overdue Alerts:** Late items display a bold `⚠️ LATE / OVERDUE` warning to drive immediate action.
 
 ### 💬 Integrated Notifications
-- **WhatsApp message generation for customer pickup:** The "Complete Repair" button prompts for the final bill amount and generates a professionally formatted pickup message.
+- **WhatsApp Automation:** One-tap "Complete Repair" button generates a professionally formatted pickup message.
 - **Auto-Cleaning Phone Numbers:** Strips non-digit characters to ensure 100% compatibility with the WhatsApp API.
 
 ---
+
 ## 🔗 Live Deployment
 
 This application is deployed on Vercel.
 
-⚠️ Note: This is a production system designed for a specific business.
-Access is restricted, and the app is not intended for public demo use.
+⚠️ **Note:** This is a production system designed for a specific business. Access is restricted, and the app is not intended for public demo use.
 
-Live URL:https://rao-electronics-support-9ebdmp8i9-meerao123s-projects.vercel.app/
+**Live URL:** [Rao Electronics Dashboard](https://rao-electronics-support-2zbrbwq7k-meerao123s-projects.vercel.app/)
 
 ---
 
@@ -86,5 +90,3 @@ This app is designed for local-first reliability.
 
 ---
 *Built specifically for Rao Electronics workforce management.*
-=======
-
