@@ -33,7 +33,7 @@ This application is deployed on Vercel.
 
 ⚠️ **Note:** This is a production system designed for a specific business. Access is restricted, and the app is not intended for public demo use.
 
-**Live URL:** [Rao Electronics Dashboard](https://rao-electronics-support-2zbrbwq7k-meerao123s-projects.vercel.app/)
+**Live URL:** https://rao-electronics-support-cc5726f6n-meerao123s-projects.vercel.app/
 
 ---
 
