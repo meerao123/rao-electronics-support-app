@@ -34,7 +34,7 @@ A professional, high-performance Progressive Web App (PWA) built with **Next.js 
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 16 (App Router)
+- **Framework:** Next.js (App Router)
 - **Styling:** Tailwind CSS
 - **Icons:** Lucide React
 - **Persistence:** Browser `LocalStorage` (Data stays safe on your device without a server)
