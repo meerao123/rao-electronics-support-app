@@ -1,10 +1,10 @@
 # 🛠️ Rao Electronics: Service Center Dashboard
 
-A professional, high-performance Progressive Web App (PWA) built with **Next.js 16** to manage electronic repair workflows. Optimized for mobile touch, it features a high-contrast "Clean Card" design and real-time priority management.
+A lightweight, fast Progressive Web App (PWA) built with **Next.js** to manage electronic repair workflows. Optimized for mobile touch, it features a high-contrast "Clean Card" design and Automatically updated priority sorting.
 
 ## ✨ Features
 
-### 🚀 Smart Priority Engine
+### 🚀 Automated priority logic
 - **Call-Based Bumping:** Repairs with the most customer follow-ups automatically jump to the top of the queue.
 - **Dynamic Sorting:** Secondary sorting by promised delivery dates ensures deadlines are never missed.
 
@@ -18,7 +18,7 @@ A professional, high-performance Progressive Web App (PWA) built with **Next.js 
 - **Pulsing Overdue Alerts:** Late items display a bold `⚠️ LATE / OVERDUE` warning to drive immediate action.
 
 ### 💬 Integrated Notifications
-- **WhatsApp Automation:** The "Complete Repair" button prompts for the final bill amount and generates a professionally formatted pickup message.
+- **WhatsApp message generation for customer pickup:** The "Complete Repair" button prompts for the final bill amount and generates a professionally formatted pickup message.
 - **Auto-Cleaning Phone Numbers:** Strips non-digit characters to ensure 100% compatibility with the WhatsApp API.
 
 ---
