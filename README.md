@@ -75,11 +75,6 @@ This app is designed for local-first reliability.
 - **Note:** Data entered on one device (e.g., a laptop) will not automatically appear on another (e.g., a phone). For shop use, it is recommended to use one dedicated management device.
 
 ---
-
-## ⚖️ License
-This project is licensed under the MIT License.
-
----
 *Built specifically for Rao Electronics workforce management.*
 =======
 
