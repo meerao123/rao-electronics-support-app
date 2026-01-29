@@ -22,6 +22,16 @@ A lightweight, fast Progressive Web App (PWA) built with **Next.js** to manage e
 - **Auto-Cleaning Phone Numbers:** Strips non-digit characters to ensure 100% compatibility with the WhatsApp API.
 
 ---
+## 🔗 Live Deployment
+
+This application is deployed on Vercel.
+
+⚠️ Note: This is a production system designed for a specific business.
+Access is restricted, and the app is not intended for public demo use.
+
+Live URL:https://rao-electronics-support-2zbrbwq7k-meerao123s-projects.vercel.app/
+
+---
 
 ## 📸 App Preview
 
